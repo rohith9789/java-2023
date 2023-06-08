@@ -17,6 +17,107 @@
 #id {
    color: rgb(34, 253, 41);
    text-align: center; 
-
-  
 }
+
+h1 {
+
+    text-align: center;
+    color: red;
+
+}
+
+.highlights {
+
+    color: blue;
+}
+
+ul :last-child {
+
+    color: chocolate;
+}
+
+a:hover {
+    font-size: 20px;
+    color: black;
+}
+
+
+h4 {
+
+    margin: 20px;
+}
+
+h5 {
+padding: 10px;
+}
+
+p.names{
+
+    width: 200px;
+    height: 150px;
+    border: 2px;
+}
+
+img {
+
+    border-radius: 2px;
+    border: 5px solid black;
+}
+
+ul {
+    list-style-type: square;
+    color: blueviolet;
+}
+ol {
+    list-style:decimal;
+}
+
+ul {
+    list-style: none;
+    color: lime;
+}
+
+table td,th {
+    
+   border:2px;
+    width:50px;
+    height:50px;
+    color: black;
+
+}
+
+
+.table2 {
+    height:500px;
+    width: 300px;
+    border-collapse: collapse;
+    border-color: 2px solid black;
+}
+
+.table2 {
+    table-layout: fixed;
+    width: 100px;
+}
+
+.pos1 {
+   position: fixed;
+    width: 0px;
+    right: 100px;
+    bottom: 0px;
+    border: 3px solid red;
+
+}
+
+.stack {
+
+    position: absolute;
+    width: 100px;
+    height:  30px;
+    border: 5px solid chocolate;
+}
+
+/* .zindexs {
+    position:sticky;
+    z-index: -2;
+  
+} */
