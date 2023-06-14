@@ -115,29 +115,174 @@ var grade =59
      console.log(printPrimeNumbers(30));
 
 
+// assign 6 q1
+ const fruits=["mango" ,"apple","orange",]
+ function push( arr,elem){
+    arr.push(elem);
+    return arr;
+
+ }
+console.log(push(fruits,"pineapple"));
+  // assign  7 q2
+const fruit=["mango" ,"apple","orange","PINEAPPLE","KESARI"]
+   function pop(arra,eleme){
+    arra.pop(eleme);
+    return arra;
+
+   }
+console.log(pop(fruit));
+
+// assign 6 q3 
+function concat(arra1,arra2){
+   const x= arra1.concat(arra2);
+   return x;
+}
+     const arra1=["hello","world"]
+const arra2=["hi", "welcome"]
+console.log(concat(arra1,arra2));
+ // assign 6 q4
+function indexoff(arra3,arra4){
+    const x=arra3.indexOf(arra4);
+    return x;
+}
+  const arra3=["hellos", "world"];
+  console.log(indexoff(arra3,"world"));
+// assign 6 q5
+  function slices(arra5,arra6){
+    const y=arra5.slice(arra6);
+    return y;
+ }
+ const arra5=["hi","bye","empty","thank you"];
+    console.log(slices(arra5,1 ));
+// assign 6 q6
+    function touppercases(str1){
+        let z= str1.toUpperCase();
+        return z;
+    }
+     let str1="welcome";
+     console.log(touppercases(str1));
+// assign 6 q7
+ function tolowercases(str2){
+        let z= str2.toLowerCase();
+        return z;
+    }
+     let str2="HAPPY";
+     console.log(tolowercases(str2));
+// assign 6 q8
+     function splits(str3){
+        let y=str3.split("");
+        return y;
+    }
+     let str3="welcomessssss";
+   console.log(splits(str3));
+// assign 6 q9
+   function charatt(str4){
+    let z=str4.charAt("2");
+    return z;
+
+   }
+   let str4="character";
+   console.log(charatt(str4));
+// assign 6 q10
+   function substrings(str5){
+    let w=str5.substring(8,13);
+    return w;
+ }
+    let str5 = "welcome tothiss world";
+   console.log(substrings(str5));
 
 
+//    function maps(arra7){
+//     const x=arra7.map((element) => element*2);
+//     return x;
+//    }
+//    let arra7=[1,2,3,5,6];
+//    console.log(maps(arra7));
+// assign 6 q11
+let arra7=[1,2,3,5,6];
+   var val=arra7.map(myfunction);
 
+   function myfunction(rohit) {
+    return rohit*2;
+   }
 
+   console.log(val);
+// assign 6 q12 
+   function filters(arra8){
+    let x=arra8.filter((element) => element%2!==0);
+     return x ;
+    }
+    let arra8=[1,2,3,5,6];
+    console.log(filters(arra8));
+
+// assign 6 q14 a
+function reverseString(str) {
+  if (str === "")
+    return "";
+  else
+    return reverseString(str.substr(1)) + str.charAt(0);
+}
+// assign 6 q15
+   function isPalindrome(word){
     
+    const len=word.length;
 
+    for(i=0;i<len/2;i++){
+        if(word[i]!==word[len-1-i]){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+   }
+   console.log(isPalindrome("racecar"))
+// assign 6 q14b
+  function builts(str8){
+    let x = str8.split("").reverse().join("");
+    return x;
+  }
+   let str8="height"
+  console.log(builts(str8));
+ // assign 6 q17
+  function duplicatevalues(array9){
+    return [...new Set(array9)];
 
+  }
+ const arr3 =[1,2,2,3,4,5,5,6,7,8,8];
+ const array9=duplicatevalues(arr3);
+ console.log(array9);
 
+// assign 6 q18
+ function sortArray(array) {
+  for (let i = 0; i < array.length - 1; i++) {
+    for (let j = 0; j < array.length - 1 - i; j++) {
+      if (array[j] > array[j + 1]) {
+        // Swap elements
+        let temp = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = temp;
+      }
+    }
+  }
+  return array;
+}
+const numbers3 = [5, 3, 8, 2, 1, 4];
+const sortedArray = sortArray(numbers3);
 
+console.log(sortedArray); // Output: [1, 2, 3, 4, 5, 8]
 
+19,20,21;
+// hoisting 
+//The process of hoisting allows variables and functions to be used before they are actually declared in the code.
+ //  example- console.log(x); // Output: undefined
+// var x = 5;
 
+// functional hoisting vs variable hoisting 
+//Hoisted functions can be called anywhere within their scope, including before their actual declaration.
 
-   
-
-
-   
-
-
-
- 
-
-  
-  
+ //When a variable is hoisted, it means that you can access the variable before its actual declaration in the code.
+//However, the value of a hoisted variable is undefined until it is assigned a value during the execution phase. 
 
 
 
